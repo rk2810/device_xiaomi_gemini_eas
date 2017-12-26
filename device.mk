@@ -122,7 +122,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    SnapdragonCamera
+    Snap
 
 # Device config scripts
 PRODUCT_PACKAGES += \
@@ -258,12 +258,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
-
-# OTA Updates
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ota.romname=AOSP-GEMINI-7.1 \
-    ro.ota.version=$(shell date -u +%Y%m%d) \
-    ro.ota.manifest=https://romhut.com/roms/aosp-gemini-7-1-309/ota.xml
 
 # Power
 PRODUCT_PACKAGES += \
